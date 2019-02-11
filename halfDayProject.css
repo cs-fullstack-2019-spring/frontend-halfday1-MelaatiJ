@@ -1,0 +1,66 @@
+.container
+{
+    grid-template-areas:
+    "header  header header"
+    "playa1 counter playa2"
+    "left middle right "
+    "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20%;
+
+}
+header
+{
+    grid-area: header;
+}
+
+#counter
+{
+    grid-area: counter;
+    text-align: center;
+    padding: 5px;
+
+}
+
+#playa1
+{
+    grid-area: playa1;
+    border: 2px solid gray;
+    /*height:60%;*/
+    /*width:30%;*/
+    padding: 5px;
+    text-align: center;
+    float:left;
+
+}
+#playa2
+{
+    grid-area:playa2;
+    padding:5px;
+    /*height: 30%;*/
+    border: 2px solid gray;
+    float: right;
+    /*width:30%;*/
+    text-align: center;
+
+}
+#left
+{
+    grid-area: left;
+    text-align: right;
+}
+#middle
+{
+    text-align: left;
+    grid-area: middle;
+}
+#right
+{
+    text-align: left;
+    grid-area: right;
+}
+footer
+{
+    grid-area: footer;
+    text-align: center;
+}
